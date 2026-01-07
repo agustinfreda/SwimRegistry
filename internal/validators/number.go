@@ -13,7 +13,7 @@ func ValidarNumeroPositivo(field string, value int) error {
 	return nil
 }
 
-func ValidarMultiploDe(value int, base int) error{
+func ValidarMultiploDe(field string, value int, base int) error{
 	if value % base != 0 {
 		return errors.ValidationError{
 			Field = field,
